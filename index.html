@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link
+      rel="shortcut icon"
+      href="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png"
+    />
+    <!-- style sheet -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body>
+
+    <!-- <img src="https://www.lsretail.com/hubfs/BLOG_reduce-waste-grow-loyalty-coffee-shop-1.jpg" alt="coffee"> -->
+    <!-- <img class="background-img" src="https://www.aaronreedphotography.com/images/xl/Beautiful-Washington-Web-2021.jpg" alt="seattleview"> -->
+    <nav id="nav" class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png"
+            alt="weather-icon"
+            width="40px"
+            height="40px"
+            class="d-inline-block align-text-top"
+          />
+          Weather Dashboard
+        </a>
+      </div>
+    </nav>
+    <main>
+      <div class="container container-fluid container-md">
+        <div id="left" class="mb-3 row">
+          <input
+          type="text"
+          class="form-control text-capitalize col-8"
+          id="cityName"
+          autofocus="true"
+          placeholder="city name"
+          />
+          <button class="btn" id="search-button"><i class="fa fa-search"></i></button>
+          <p class= "cityNotFound hide">city not found</p>
+          <div id="seachHistory" class="mb-3 col-3"></div>
+          <!-- <div id="left" class="mb-3 row"> -->
+             <!-- <div class="history-container row"> -->
+          
+          <!-- </div> -->
+        </div>
+
+        <div id="right" class="flex">
+          <!-- today result -->
+          <ul class="top-column">
+            <li id="name" class="today text-capitalize"></li>
+            <div id="icon"></div>
+            <li id="today" class="today"></li>
+            <li id="temp" class="today"></li>
+            <li id="wind" class="today"></li>
+            <li id="humidity" class="today"></li>
+            <li id="uv" class="today"></li>
+          </ul>
+          <!-- 5 day forecast -->
+          <div class="h6">5-Day Forecast</div>
+            <div class="fiveDay">
+              <div id="weather1" class="col-lg-2 col-sm-5 mb-3"></div>
+              <div id="weather2" class="col-lg-2 col-sm-5 mb-3"></div>
+              <div id="weather3" class="col-lg-2 col-sm-5 mb-3"></div>
+              <div id="weather4" class="col-lg-2 col-sm-5 mb-3"></div>
+              <div id="weather5" class="col-lg-2 col-sm-5 mb-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+  </body>
+</html>

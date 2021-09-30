@@ -1,0 +1,288 @@
+:root {
+  --blue: rgb(0, 140, 255);
+  --white: white;
+  --light: rgb(255, 241, 176);
+  --font-color: rgb(41, 41, 41);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("https://www.lsretail.com/hubfs/BLOG_reduce-waste-grow-loyalty-coffee-shop-1.jpg");
+  font-size: 1.2em;
+  /* letter-spacing: 0.085em; */
+  color: var(--white);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  letter-spacing: 0.085em;
+}
+
+/* nav bar */
+#nav {
+  background-color: rgba(0, 0, 0, 0.274);
+  height: 110px;
+  width: 100%;
+}
+
+a.navbar-brand {
+  font-size: 1.5em;
+  font-weight: 500;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.966);
+}
+
+/* Searching city section */
+.row {
+  display: table-column;
+}
+.container {
+  /* display: grid; */
+  /* grid-template-columns: 20% 84% 1%; */
+  /* grid-gap: 1em;
+  grid-template-rows: 100%; */
+  margin-top: 30px;
+  padding: 0;
+  justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#left {
+  float: left;
+  width: 157px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  margin-bottom: 20px;
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background-color: #fff;
+}
+.form-control:hover {
+  box-shadow: 0 0 10px rgb(194, 216, 255);
+}
+
+.form-control:focus {
+  color: #495057;
+  outline: 0;
+  box-shadow: 0;
+}
+
+.btn {
+  margin-bottom: 20px;
+  background-color: rgb(72, 173, 255);
+  color: var(--white);
+  border-radius: 0 5px 5px 0;
+  height: 38px;
+  float: left;
+  min-width: 1em;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  transition: 0.2s;
+  transform-origin: 50% 60%;
+}
+.btn:hover {
+  background-image: -webkit-linear-gradient(
+    150deg,
+    rgb(0, 140, 255) 30%,
+    rgb(149, 248, 255)
+  );
+  background-image: -moz-linear-gradient(
+    150deg,
+    rgb(0, 140, 255) 30%,
+    rgb(149, 248, 255)
+  );
+  background-image: linear-gradient(
+    150deg,
+    rgb(0, 140, 255) 30%,
+    rgb(149, 248, 255)
+  );
+  color: var(--white);
+  box-shadow: 0 0 10px rgb(194, 216, 255);
+  animation: slidebg 5s linear infinite;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+
+/* searching history */
+h2 {
+  font-size: 0.8em;
+  color: rgb(71, 71, 71);
+}
+
+div#searchHistory {
+  color: var(--white);
+  border-radius: 5px;
+}
+
+div.historyItem {
+  display: inline-block;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 6em;
+  font-size: 0.85em;
+  background-color: rgba(82, 82, 82, 0.424);
+  color: rgb(255, 255, 255);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  justify-content: center;
+  cursor: pointer;
+  margin: 15px;
+}
+
+div.historyItem:hover {
+  background-color: rgb(72, 173, 255);
+  box-shadow: 0 0 10px rgb(194, 216, 255);
+  color: var(--white);
+  border: none;
+  /* box-shadow: 0 0 10px rgb(194, 216, 255); */
+}
+
+/* city not found */
+.hide {
+  color: rgb(105, 105, 105);
+  font-size: 0.85em;
+  display: none;
+}
+
+/* Today column */
+
+li {
+  list-style: none;
+  text-align: center;
+}
+
+ul.top-column {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.274);
+  width: 100%;
+  color: var(--white);
+}
+
+div#icon {
+  text-align: center;
+}
+
+.today {
+  /* text-align: left; */
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+#name {
+  font-size: 1.2em;
+  letter-spacing: 0.085em;
+  font-weight: 600;
+  /* color: rgb(131, 170, 255); */
+}
+
+#uv.today {
+  margin-bottom: 10px;
+}
+
+/* five days weather */
+div.fiveDay {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+
+#weather1,
+#weather2,
+#weather3,
+#weather4,
+#weather5 {
+  background-color: rgba(255, 253, 243, 0.466);
+  color: rgb(39, 39, 39);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.75em;
+  font-weight: 500;
+  text-align: center;
+}
+
+#weather1:hover,
+#weather2:hover,
+#weather3:hover,
+#weather4:hover,
+#weather5:hover {
+  /* border: 2px solid transparent; */
+  /* border-color: var(--blue); */
+  box-shadow: 0 0 10px var(--blue);
+  border: none;
+}
+
+div.h6 {
+  font-weight: 500;
+  letter-spacing: 0.085em;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 15px;
+  color: rgb(77, 77, 77);
+  text-shadow: 0 0 6px var(--white);
+}
+
+/* UV color */
+
+.yellow {
+  background-color: rgb(248, 248, 117);
+  color: rgb(104, 104, 104);
+}
+.green {
+  background-color: rgb(44, 109, 49);
+  color: var(--white);
+}
+.orange {
+  background-color: rgb(255, 166, 0);
+  color: rgb(39, 39, 39);
+}
+.red {
+  background-color: rgb(199, 63, 0);
+  color: var(--white);
+}
+.purple {
+  background-color: rgb(89, 0, 190);
+  color: var(--white);
+}
+
+/* responsive  */
+
+/* @media (max-width: 575.98px) {
+}
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 991.98px) {
+
+
+@media (max-width: 1199.98px) {
+
+}
+
+@media (max-width: 1399.98px) {
+
+} */
