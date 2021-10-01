@@ -230,7 +230,7 @@ div.fiveDay {
 #weather5:hover {
   /* border: 2px solid transparent; */
   /* border-color: var(--blue); */
-  box-shadow: 0 0 10px var(--blue);
+
   border: none;
 }
 

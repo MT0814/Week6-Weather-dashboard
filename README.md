@@ -29,9 +29,12 @@ THEN I am again presented with current and future conditions for that city
 
 ## Others
 
-![index.html screenshot](./screenshot.png)
+_Screenshot Landscape Mode_
+![index.html screenshot](./doc/screenshot_l.png)<br><br/>
+_Screenshot Portrait Mode_
+![index.html screenshot](./doc/screenshot_p.png)
 
-[Website](https://mt0814.github.io/week6-weather-API/)
+[Weather Dashboard Website](https://mt0814.github.io/Week6-Weather-dashboard/)
 
 ---
 

@@ -9,29 +9,35 @@ function getApi(city_name) {
   var search = document.querySelector("#cityName").value;
   // console.log(city_name);
   // if the input box is empty, shows nothing
-  if (search === "" && typeof city_name === "string") {
+
+  if (city_name && typeof city_name === "string") {
     search = city_name;
   }
-  // else if (search !== typeof city_name){
-  //   var cityNotFund = document.querySelector('.cityNotFound')
-  //   cityNotFund.classList.remove('hide')
-  // }
   else if (search === "") {
     return;
-  }
+  }  
+  // else {
+    stopSearching(search);
+  // }
   var requestUrl =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
     search +
     "&appid=" +
     apikey;
   
-  stopSearching(search);
+
   fetch(requestUrl)
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
-      // console.log(data);
+      console.log(data);
+      var cityNotFound = document.querySelector('.cityNotFound')
+      if (data.cod === "404") {
+        cityNotFound.classList.remove ('hide');
+        return ;
+      }
+       cityNotFound.classList.add ('hide');
       return fetch(
         `https://api.openweathermap.org/data/2.5/onecall?lat=${data.coord.lat}&lon=${data.coord.lon}&appid=${apikey}&units=imperial`
       );
@@ -42,7 +48,8 @@ function getApi(city_name) {
     .then(function (data) {
       // console.log(data);
 
-
+     var cityName= document.getElementById('name');
+     cityName.textContent = search 
 
       var weatherIcon = document.createElement("img");
       var tempvariable = data.current.weather[0].icon;
