@@ -157,9 +157,13 @@ div.historyItem:hover {
 
 /* city not found */
 .hide {
-  color: rgb(105, 105, 105);
-  font-size: 0.85em;
   display: none;
+}
+
+.cityNotFound {
+  color: rgb(199, 63, 0);
+  font-size: 0.9em;
+  font-weight: 500;
 }
 
 /* Today column */
