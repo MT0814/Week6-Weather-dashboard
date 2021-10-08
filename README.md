@@ -1,6 +1,6 @@
 # 06 Server-Side APIs: Weather Dashboard
 
-Request weather api to fetch weather data, using moment.js for today's date and toLocaleDateString() method to get the date for 5 day forecast.
+It's a weather application for searching global cities' weather condition, temp., humidity, wind speed and UV index.
 
 ## User Story
 
@@ -25,6 +25,8 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
+## Technology used
+Request OpenWeather API to fetch weather data, using moment.js for today's date and toLocaleDateString() method to get the date for 5 day forecast.
 
 ## License
 [![License: MIT License](https://img.shields.io/badge/License-MIT%20License-yellow.svg)](https://www.gnu.org/licenses/MIT%20License)
