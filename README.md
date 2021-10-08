@@ -27,6 +27,9 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
 
+## License
+[![License: MIT License](https://img.shields.io/badge/License-MIT%20License-yellow.svg)](https://www.gnu.org/licenses/MIT%20License)
+
 ## Others
 
 _Screenshot Landscape Mode_
