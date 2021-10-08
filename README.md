@@ -1,7 +1,6 @@
 # 06 Server-Side APIs: Weather Dashboard
 
 Request weather api to fetch weather data, using moment.js for today's date and toLocaleDateString() method to get the date for 5 day forecast.
-Used style, Classlist, a
 
 ## User Story
 
