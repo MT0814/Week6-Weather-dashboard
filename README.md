@@ -1,8 +1,10 @@
 # 06 Server-Side APIs: Weather Dashboard
 
+## Description
+
 It's a weather application for searching global cities' weather condition, temp., humidity, wind speed and UV index.
 
-## User Story
+### User Story
 
 ```
 AS A traveler
@@ -10,7 +12,7 @@ I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 ```
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 ```
 GIVEN a weather dashboard with form inputs
