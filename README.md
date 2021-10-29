@@ -28,10 +28,14 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
 ## Technology used
+
 Request OpenWeather API to fetch weather data, using moment.js for today's date and toLocaleDateString() method to get the date for 5 day forecast.
 
+
 ## License
-[![License: MIT License](https://img.shields.io/badge/License-MIT%20License-yellow.svg)](https://www.gnu.org/licenses/MIT%20License)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ## Others
 
